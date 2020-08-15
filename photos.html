@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>photos</title>
+<style>
+.a
+{
+right-margin:0px;
+font-family:"times";
+color:Red;
+}
+</style>
+<body>
+<div=a>
+<a href="homepage.html" style="text-decoration:none">Back to home</a>
+</div>
+<h2 class="w3-center" style="color:blue">Picture Gallery</h2>
+
+<div class="w3-content w3-section"width="100%" height="100%" >
+  <img class="mySlides" src="1452981182_eoqt16010039.jpg"style="width:100%">
+  <img class="mySlides" src="maxresdefault.jpg"style="width:100%" >
+  <img class="mySlides" src="maracanamain.jpg" style="width:100%">
+  <img class="mySlides" src="15_09_trophy_487360316_2000x1125.jpg" style="width:100%">
+  <img class="mySlides" src="India-in-Rio.png" style="width:100%">
+  <img class="mySlides" src="549.jpg"style="width:100%">
+  <img class="mySlides" src="591564196.jpg"style="width:100%" >
+  <img class="mySlides" src="rio-2016-olympics-master.jpg" style="width:100%">
+  <img class="mySlides" src="Rio-2016-Olympics6.jpg" style="width:100%">
+  <img class="mySlides" src="2016082315460089468.jpg" style="width:100%">
+  <img class="mySlides" src="2009-3-14_ManUtd_vs_LFC_Ronaldo_Freekick_Back.JPG" style="width:100%">
+  <img class="mySlides" src="53800176.jpg" style="width:100%">
+  <img class="mySlides" src="2016_Rio_Summer_Olympics.jpg" style="width:100%">
+  <img class="mySlides" src="olympics-m1.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</head>
+</html>
+
